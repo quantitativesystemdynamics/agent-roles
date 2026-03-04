@@ -35,12 +35,13 @@ Add this to your `AGENTS.md`, `claude.md`, or similar configuration:
 ```markdown
 ## Role Selection Protocol
 
-Before executing substantive work, have the AI read `orientation.md` first.
+Before executing substantive work, read `orientation.md` first.
 This will provide the critical context for role selection and implementation.
 
-Example prompt:
+Example:
 "Read ./agent-roles/orientation.md first, then select an appropriate role for this task."
 ```
+
 
 
 ### Option 3: Add as a Skill
@@ -51,7 +52,7 @@ Copy the `agent-roles` directory to your AI's skills or context directory:
 cp -r agent-roles/ ~/your-ai-config/skills/
 ```
 
-Then direct the AI to read orientation.md first:
+Then read orientation.md first:
 
 ```
 Read ./agent-roles/orientation.md first, then select an appropriate role for this task.
