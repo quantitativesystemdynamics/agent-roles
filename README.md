@@ -37,9 +37,6 @@ Add this to your `AGENTS.md`, `claude.md`, or similar configuration:
 
 Before executing substantive work, read `orientation.md` first.
 This will provide the critical context for role selection and implementation.
-
-Example:
-"Read ./agent-roles/orientation.md first, then select an appropriate role for this task."
 ```
 
 
