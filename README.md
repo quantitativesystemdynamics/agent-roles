@@ -1,5 +1,7 @@
 # Agent Roles
 
+> **IMPORTANT: Start with `orientation.md`** — Before assigning any roles, read `orientation.md` first. It provides the critical context for how to properly select and implement roles for AI agents. This is the fundamental key to using this library effectively.
+
 A comprehensive, role-based protocol library for AI agent collaboration. This library provides 194 distinct roles organized by domain, enabling AI agents to adopt specific professional personas with clear purposes, responsibilities, and deliverables.
 
 ## What Is This?
@@ -13,6 +15,8 @@ This is a **role-based collaboration framework** for AI agents. Instead of treat
 - Anyone wanting structured AI collaboration
 
 ---
+
+> **IMPORTANT:** Read `orientation.md` before using this library. It explains how to properly orient an AI agent to a specific role.
 
 ## Quick Start
 
