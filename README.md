@@ -22,10 +22,10 @@ This is a **role-based collaboration framework** for AI agents. Instead of treat
 
 ### Option 1: Reference a Specific Role File
 
-Direct your AI to use a specific role by providing the file path:
+Direct your AI to read `orientation.md` first, then select a specific role:
 
 ```
-Use the role defined in /path/to/agent-roles/security/security-engineer.md
+Read ./agent-roles/orientation.md first, then use the security-engineer role defined in ./agent-roles/security/security-engineer.md
 ```
 
 ### Option 2: Include in Your Agents.md or Context File
@@ -35,24 +35,13 @@ Add this to your `AGENTS.md`, `claude.md`, or similar configuration:
 ```markdown
 ## Role Selection Protocol
 
-Before executing substantive work, select an appropriate role from the agent-roles library:
-- Executive & Strategy: `executive/`
-- Governance & Oversight: `governance/`
-- Legal & Contracts: `legal/`
-- Finance & Accounting: `finance/`
-- IT & Identity: `it/`
-- Reliability (SRE): `reliability/`
-- Security: `security/`
-- Trust & Safety: `trust-and-safety/`
-- People & Culture: `people/`
-- Operations: `operations/`
-- Data Privacy: `data-privacy/`
-- Compliance: `compliance/`
-- Weird but Useful: `weird-but-useful/`
+Before executing substantive work, have the AI read `orientation.md` first.
+This will provide the critical context for role selection and implementation.
 
 Example prompt:
-"You are a security-engineer as defined in ./agent-roles/security/security-engineer.md"
+"Read ./agent-roles/orientation.md first, then select an appropriate role for this task."
 ```
+
 
 ### Option 3: Add as a Skill
 
@@ -62,10 +51,10 @@ Copy the `agent-roles` directory to your AI's skills or context directory:
 cp -r agent-roles/ ~/your-ai-config/skills/
 ```
 
-Then reference roles by filename:
+Then direct the AI to read orientation.md first:
 
 ```
-Use the security-architect role from your skills/agent-roles/security/security-architect.md
+Read ./agent-roles/orientation.md first, then select an appropriate role for this task.
 ```
 
 ---
